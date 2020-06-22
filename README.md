@@ -7,6 +7,6 @@
 
 ## Challanges
 
-| Challenge                       | Code Sandbox  | Github                                  |
-| ------------------------------- |:-------------:|:---------------------------------------:|
-| [Link](https://bit.ly/2Z4kb4C)  | -             | [Link](../fylo-data-storage-component)  |
+| Challenge                       | Code Sandbox                    | Github                                  |
+| ------------------------------- |:-------------------------------:|:---------------------------------------:|
+| [Link](https://bit.ly/2Z4kb4C)  | [Link](https://bit.ly/2zTdv0q)  | [Link](../fylo-data-storage-component)  |
