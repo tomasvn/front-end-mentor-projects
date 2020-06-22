@@ -206,7 +206,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .component--second {
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
   }
 }
