@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 10px; color: #fff; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="component component--first flex">
+    <img class="logo" src="./images/logo.svg" alt="logo" />
+    <div class="flex">
+      <button class="btn btn--file">
+        <svg width="20" height="24">
+          <use xlink:href="./images/icon-document.svg#icon-document" />
+        </svg>
+      </button>
+      <button class="btn btn--folder">
+        <svg width="24" height="20">
+          <use xlink:href="./images/icon-folder.svg#icon-folder" />
+        </svg>
+      </button>
+      <button class="btn btn--upload">
+        <svg width="24" height="16">
+          <use xlink:href="./images/icon-upload.svg#icon-upload" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="component component--second">
+    <div class="amount-left">
+      <span class="amount-left--dark amount-left--bold">185</span>
+      <span class="amount-left--light amount-left--bold amount-left--spacing">GB LEFT</span>
+      <span class="amount-left--arrow no-mobile"></span>
+    </div>
+    <span class="light-text light-weight">
+      You’ve used <strong><small>815</small></strong> <span class="text"><strong>GB</strong></span> of your storage
+    </span>
+    <div class="progress-bar flex">
+      <div class="progress-bar__fill flex">
+        <div class="progress-bar-dot"></div>
+      </div>
+    </div>
+    <div class="flex flex-space light-text">
+      <strong>
+        <small>0</small>
+        <span class="text">GB</span>
+      </strong>
+      <strong>
+        <small>1000</small>
+        <span class="text">GB</span>
+      </strong>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="github.com/tomasvn" target="_blank" rel="noopener">Ngoc Tu Nguyen &copy; 2020</a>.
+  </div>
+</body>
+</html>
