@@ -5,7 +5,7 @@
 - Repo for [frontendmentor.io](http://www.frontendmentor.io/)
 - This is repo for practice
 
-## Chalanges
+## Challanges
 
 | Challenge                       | Code Sandbox  | Github |
 | ------------------------------- |:-------------:|:------:|
