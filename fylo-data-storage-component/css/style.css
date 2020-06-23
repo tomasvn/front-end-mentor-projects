@@ -1,6 +1,8 @@
 :root {
   --primary: hsl(228, 56%, 26%);
   --secondary: hsl(229, 57%, 11%);
+  --primary-gradiet: hsl(6, 100%, 80%);
+  --secondary-gradient: hsl(335, 100%, 65%);
   --grey: hsl(229, 7%, 55%);
   --light-blue: hsl(243, 100%, 93%);
   --light: #fff;
@@ -156,12 +158,13 @@ body {
 
 .progress-bar__fill {
   margin: 5px;
-  background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  background-image: linear-gradient(to right, var(--primary-gradiet), var(--secondary-gradient));
   width: 75%;
   height: 10px;
   border-radius: inherit;
   align-items: center;
   justify-content: flex-end;
+  animation: progress cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 
 .progress-bar-dot {
@@ -170,6 +173,12 @@ body {
   width: 8px;
   height: 8px;
   margin-right: 2px;
+}
+
+@keyframes progress {
+  0% { width: 0%; }
+
+  100% { width: 75%; }
 }
 
 /*
