@@ -7,6 +7,7 @@
 
 ## Challanges
 
-| Challenge                       | Code Sandbox                    | Github                          |
-| ------------------------------- |:-------------------------------:|:-------------------------------:|
-| [Link](https://bit.ly/2Z4kb4C)  | [Link](https://bit.ly/2zTdv0q)  | [Link](https://bit.ly/3esEPBO)  |
+| Challenge                      | Level | Code Sandbox                    | Github                          |
+| -------------------------------|-------|:-------------------------------:|:-------------------------------:|
+| [Link](https://bit.ly/2Z4kb4C) |  1    | [Link](https://bit.ly/2zTdv0q)  | [Link](https://bit.ly/3esEPBO)  |
+| [Link](https://bit.ly/3fNWPH0) |  1    |                                 |                                 |
