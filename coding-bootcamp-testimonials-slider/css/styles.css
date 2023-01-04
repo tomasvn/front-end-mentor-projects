@@ -1,5 +1,5 @@
 :root {
-  --font-stack: 'Inter', sans-serif;
+  --font-stack: "Inter", sans-serif;
   --primary: hsl(240, 38%, 20%);
   --secondary: hsl(240, 18%, 77%);
   --body-fs: 24px;
@@ -57,7 +57,7 @@ button {
 /* Components */
 
 .top-section {
-  background-image: url('../images/pattern-bg.svg');
+  background-image: url("../images/pattern-bg.svg");
   background-size: 95%;
   background-position: top;
   background-repeat: no-repeat;
@@ -65,7 +65,7 @@ button {
 }
 
 .bottom-section {
-  background-image: url('../images/pattern-curve.svg');
+  background-image: url("../images/pattern-curve.svg");
   background-repeat: no-repeat;
   height: 74px;
 }
@@ -85,7 +85,7 @@ button {
 }
 
 .slide-content-wrap {
-  max-width: 570px
+  max-width: 570px;
 }
 
 .slide-text {
@@ -104,7 +104,7 @@ button {
 .slide__img {
   width: 250px;
   display: flex;
-  box-shadow: -3px 4px 5px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.15);
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -116,7 +116,8 @@ button {
 }
 
 .slide__content-bg {
-  background: url('../images/pattern-quotes.svg') no-repeat 50% 20%;
+  position: relative;
+  background: url("../images/pattern-quotes.svg") no-repeat 50% 20%;
   background-size: 20%;
 }
 
@@ -205,8 +206,18 @@ button {
     background-size: contain;
   }
 
+  .slider-wrap {
+    padding-bottom: 30px;
+    position: relative;
+  }
+
   .slide {
     padding: 15px;
+  }
+
+  .slide__content {
+    text-align: left;
+    background-position: left;
   }
 
   .slide__img {
@@ -217,5 +228,21 @@ button {
   .u-space-around {
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .btn-wrap {
+    transform: translateX(0);
+    left: auto;
+    right: 360px;
+    top: 524px;
+  }
+
+  .btn {
+    width: 56px;
+    height: 56px;
+  }
+
+  .slide-content-wrap {
+    max-width: none;
   }
 }
