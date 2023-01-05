@@ -70,6 +70,10 @@ body.no-overflow {
   overflow: hidden;
 }
 
+.is-hidden {
+  display: none;
+}
+
 .line {
   max-width: 50%;
   margin: 0 auto;
