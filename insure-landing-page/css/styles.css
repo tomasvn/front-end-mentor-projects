@@ -125,8 +125,6 @@ body.no-overflow {
   position: relative;
   align-items: center;
   justify-content: space-between;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 .menu {
@@ -143,9 +141,9 @@ body.no-overflow {
   position: absolute;
   top: 78px;
   color: #fff;
-  margin-left: -25px;
-  margin-right: -25px;
-  width: 100%;
+	margin-left: -25px;
+	margin-right: -25px;
+	width: calc(100% + 50px);
   height: 0;
   overflow: hidden;
   z-index: 10;
@@ -184,6 +182,7 @@ body.no-overflow {
   letter-spacing: 1px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .btn-link--space {
@@ -201,7 +200,7 @@ body.no-overflow {
 
 .main-section--dark {
   background-color: var(--primary-c);
-  padding: 100px 28px 93px 28px;
+  padding: 100px 0 93px 0;
   text-align: center;
   color: #fff;
 }
@@ -407,13 +406,23 @@ body.no-overflow {
   margin: 30px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .d-sm-none {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1300px) {
   body {
     position: relative;
   }
 
   .container {
-    padding: 0 50px;
+    padding: 0 120px;
+  }
+
+  .navigation__logo {
+    flex: 1 1 100%;
   }
 
   .social-section {
@@ -421,13 +430,16 @@ body.no-overflow {
     justify-content: space-between;
   }
 
-  .flex-wrapper--section {
-    flex: 1 1 25%;
-    text-align: left;
-  }
-
   .btn-link--space {
     margin-top: 0;
+  }
+
+  .cta-heading--large {
+    font-size: 56px;
+  }
+
+  .cta-wrap--secondary {
+    padding-top: 200px;
   }
 
   .main-section--desktop {
@@ -444,6 +456,11 @@ body.no-overflow {
     max-width: 200px;
   }
 
+  .cta-heading {
+    margin-top: 0;
+    line-height: 48px;
+  }
+
   .cta-wrap--secondary {
     text-align: left;
   }
@@ -452,14 +469,150 @@ body.no-overflow {
     max-width: 10%;
   }
 
-  .main-section {
-    height: 700px;
+  .hero-wrapper {
+    position: relative;
+    display: grid;
   }
 
-  .intro-img {
-    position: absolute;
+  .navbar {
+    position: static;
+    height: 100%;
+    background-image: none;
+    background-color: transparent;
+    color: var(--light-gray);
+    display: flex;
+  }
+
+  .navbar__list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__list-item.navbar__list-item {
+    padding: 0;
+    color: var(--dark-gray);
+    flex: 1;
+  }
+
+  .navbar__list-item .btn-link {
+    margin-right: 0;
+    color: #000;
+  }
+
+  .navigation__menu {
+    display: none;
+  }
+
+  .hero {
+    z-index: 1;
+    width: 500px;
+    height: 600px;
+    grid-area: -1 / 1;
+    margin-left: auto;
+    margin-right: 120px;
+    margin-bottom: -120px;
+    padding-top: 100px;
+  }
+
+  .main-section {
+    grid-area: -1 / 1;
+    overflow: hidden;
+  }
+
+  .main-section::before {
+    background-image: url(../images/bg-pattern-intro-left-desktop.svg);
+    width: 300px;
+    top: 70%;
+  }
+
+  .main-section::after {
+    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    bottom: 0;
+    width: 450px;
+    top: -66px;
+    right: -100px;
+    background-size: contain;
+  }
+
+  .hero__img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .main-section__inner {
+    text-align: left;
+    max-width: 500px;
+  }
+
+  .main-section__inner .btn-link {
+    margin-left: 0;
+  }
+
+  .cards-list {
+    display: flex;
+    column-gap: 25px;
+  }
+
+  .cards-list__item.cards-list__item {
+    margin-bottom: 0;
+  }
+
+  .card__title {
+    font-size: 24px;
+  }
+
+  .card__text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .footer-section::before {
+    width: 500px;
+    height: 300px;
+  }
+
+  .about-card {
+    padding: 60px;
+  }
+
+  .about-card::before {
     top: 0;
-    right: 0;
-    z-index: 10;
+    background: url(../images/bg-pattern-intro-right-desktop.svg);
+    width: 350px;
+  }
+
+  .about-card__inner {
+    display: flex;
+    text-align: left;
+  }
+
+  .about-card__inner .btn-link {
+    margin-right: 0;
+    align-self: center;
+  }
+
+  .about-card__title {
+    margin-bottom: 0;
+    font-size: 48px;
+  }
+
+  .about-us-wrapper {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .about-us {
+    margin: 0;
+    flex: 1 1 25%;
+    text-align: left;
+  }
+
+  .about-us__list-item:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
+  .footer-section {
+    margin-top: 150px;
   }
 }
