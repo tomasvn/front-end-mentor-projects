@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,54 +17,149 @@
   </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <div class="container">
+    <nav class="navbar">
+      <svg class="navbar__logo" width="124" height="24" viewBox="0 0 124 24">
+        <use href="images/logo.svg#logo" />
+      </svg>
+      <button class="navbar__btn js-btn" type="button">
+        <svg class="navbar__btn-icon" width="24" height="18" viewBox="0 0 24 18">
+          <use href="images/icon-hamburger.svg#ham" />
+        </svg>
+      </button>
+      <ul class="navbar__list js-nav">
+        <li class="navbar__list-item"><a href="#0">About</a></li>
+        <li class="navbar__list-item"><a href="#0">Services</a></li>
+        <li class="navbar__list-item"><a href="#0">Projects</a></li>
+        <li class="navbar__list-item"><a href="#0">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
-  We are creatives
+  <div class="container">
+    <h1 class="title">We are creatives</h1>
+  </div>
 
-  Transform your brand
+  <div class="cards">
+    <div class="cards-list">
+      <div class="cards-list__item">
+        <h2 class="cards-list__title">Transform your brand</h2>
+        <p class="cards-list__text">We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <a href="#0" class="cards__link">Learn more</a>
+      </div>
+    </div>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+    <img class="brand-image" src="images/mobile/image-transform.jpg" alt="" />
 
-  Learn more
+    <div class="cards-list__item">
+      <h2 class="cards-list__title">Stand out to the right audience</h2>
+      <p class="cards-list__text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+      <a href="#0" class="cards-list__link">Learn more</a>
+    </div>
 
-  Stand out to the right audience
+    <div class="cards-list__item">
+      <h2 class="cards-list__title">Graphic design</h2>
+      <p class="cards-list__text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients attention.</p>
+      <a href="#0" class="cards-list__link">Learn more</a>
+    </div>
+    
+    <div class="cards-list__item">
+      <h2 class="cards-list__title">Photography</h2>
+      <p class="cards-list__text">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    </div>
+  </div>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+  <div class="testimonials">
+    <h2>Client testimonials</h2>
 
-  Learn more
+    <div class="testimonial-list">
+      <div class="testimonial">
+        <img src="images/image-emily.jpg" alt="Emily" />
+        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        
+        <div class="testimonial-text">
+          <p class="tesimonial-text__heading">Emily R.</p>
+          <p class="testimonial-text__sub-heading">Marketing Director</p>
+        </div>
+      </div>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      <div class="testimonial">
+        <img src="images/image-thomas.jpg" alt="Thomas" />
+        <p>Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+        
+        <div class="testimonial-text">
+          <p class="tesimonial-text__heading">Thomas S.</p>
+          <p class="testimonial-text__sub-heading">Chief Operating Officer</p>
+        </div>
+      </div>
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      <div class="testimonial">
+        <img src="images/image-jennie.jpg" alt="Jennie" />
+        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        
+        <div class="testimonial-text">
+          <p class="tesimonial-text__heading">Jennie F.</p>
+          <p class="testimonial-text__sub-heading">Business Owner</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  Client testimonials
+  <footer class="footer">
+    <img src="images/logo.svg" alt="Sunny side logo" />
+    <ul class="sub-nav">
+      <li class="sub-nav__item">
+        <a class="sub-nav__link" href="#0">About</a>
+      </li>
+      <li class="sub-nav__item">
+        <a class="sub-nav__link" href="#0">Services</a>
+      </li>
+      <li class="sub-nav__item">
+        <a class="sub-nav__link" href="#0">Projects</a>
+      </li>
+      <li class="sub-nav__item">
+        <a class="sub-nav__link" href="#0">Contact</a>
+      </li>
+    </ul>
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="#0">
+          <svg class="social-list__icon social-list__icon--fb" width="20" height="20" viewBox="0 0 20 20">
+            <use href="images/icon-facebook.svg#fb" />
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#0">
+          <svg class="social-list__icon social-list__icon--ig" width="20" height="20" viewBox="0 0 20 20">
+            <use href="images/icon-instagram.svg#ig" />
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#0">
+          <svg class="social-list__icon social-list__icon--tw" width="20" height="20" viewBox="0 0 20 20">
+            <use href="images/icon-twitter.svg#tw" />
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#0">
+          <svg class="social-list__icon social-list__icon--pin" width="20" height="20" viewBox="0 0 20 20">
+            <use href="images/icon-pinterest.svg#pin" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </footer>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="js/index.js"></script>
 </body>
 </html>
